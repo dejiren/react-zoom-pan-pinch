@@ -69,4 +69,8 @@ export const initialSetup: LibrarySetup = {
     animationType: "easeOut",
     equalToMove: true,
   },
+  imageData: {
+    isNextImage: false,
+    isPrevImage: false,
+  },
 };
