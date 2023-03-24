@@ -415,23 +415,6 @@ export const wrapperPropsTable: ComponentProps = {
         "The calculation of the velocity animation duration is adjusted to the length of the mouse movement",
     },
   },
-  imageData: {
-    imageData: {
-      type: [""],
-      defaultValue: "",
-      description: "",
-    },
-    isPrevImage: {
-      type: ["boolean"],
-      defaultValue: String(initialSetup.imageData.isPrevImage),
-      description: "Sets if there is an image before.",
-    },
-    isNextImage: {
-      type: ["boolean"],
-      defaultValue: String(initialSetup.imageData.isNextImage),
-      description: "Sets if there is an image after.",
-    },
-  },
   onWheelStart: {
     type: ["(ref: ReactZoomPanPinchRef, event) => void"],
     defaultValue: "undefined",
