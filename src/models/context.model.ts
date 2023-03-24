@@ -26,13 +26,23 @@ export type ReactZoomPanPinchContentRef = {
 export type ReactZoomPanPinchRef = ReactZoomPanPinchContextState &
   ReactZoomPanPinchHandlers;
 
+export type FileContentWithKey = {
+  base64String?: string | null;
+  key: number;
+  filename: string;
+  mimeType?: string;
+  filesize?: number;
+  imgWidth?: number;
+  imgHeight?: number;
+};
+
 export type ReactZoomPanPinchState = {
   previousScale: number;
   scale: number;
   positionX: number;
   positionY: number;
-  isPrevImage?: boolean;
-  isNextImage?: boolean;
+  prevImage?: FileContentWithKey;
+  nextImage?: FileContentWithKey;
 };
 
 export type ReactZoomPanPinchHandlers = {

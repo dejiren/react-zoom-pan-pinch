@@ -5,8 +5,6 @@ export const initialState: ReactZoomPanPinchState = {
   scale: 1,
   positionX: 0,
   positionY: 0,
-  isNextImage: false,
-  isPrevImage: false,
 };
 
 export const initialSetup: LibrarySetup = {
