@@ -30,13 +30,9 @@ export const TransformWrapper = React.forwardRef(
 
     useImperativeHandle(ref, () => getControls(instance), [instance]);
 
-    // useEffect(() => {
-    //   instance.update(props);
-    // }, [instance, props]);
-
     useEffect(() => {
       instance.update(props);
-    });
+    }, [instance, props]);
 
     return <Context.Provider value={instance}>{content}</Context.Provider>;
   },
