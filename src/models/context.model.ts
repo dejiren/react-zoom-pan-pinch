@@ -9,6 +9,7 @@ import {
   resetTransform,
   setTransform,
   zoomOut,
+  setTransformImage,
 } from "../core/handlers/handlers.logic";
 import { ZoomPanPinch } from "../core/instance.core";
 
@@ -52,6 +53,7 @@ export type ReactZoomPanPinchHandlers = {
   resetTransform: ReturnType<typeof resetTransform>;
   centerView: ReturnType<typeof centerView>;
   zoomToElement: ReturnType<typeof zoomToElement>;
+  setTransformImage: ReturnType<typeof setTransformImage>;
 };
 
 export type ReactZoomPanPinchRefProps = {

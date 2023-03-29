@@ -7,6 +7,7 @@ import {
   ReactZoomPanPinchProps,
   ReactZoomPanPinchState,
   ReactZoomPanPinchRef,
+  FileContentWithKey,
 } from "../models";
 import {
   getContext,
@@ -420,6 +421,14 @@ export class ZoomPanPinch {
     } else {
       console.error("Detected NaN set state values");
     }
+  };
+
+  setTransformStateImage = (
+    prevImage?: FileContentWithKey,
+    nextImage?: FileContentWithKey,
+  ): void => {
+    this.transformState.prevImage = prevImage;
+    this.transformState.nextImage = nextImage;
   };
 
   setCenter = (): void => {

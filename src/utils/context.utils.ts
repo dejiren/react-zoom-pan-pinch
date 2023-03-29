@@ -11,6 +11,7 @@ import {
   resetTransform,
   zoomToElement,
   centerView,
+  setTransformImage,
 } from "../core/handlers/handlers.logic";
 
 export const getControls = (
@@ -24,6 +25,7 @@ export const getControls = (
     resetTransform: resetTransform(contextInstance),
     centerView: centerView(contextInstance),
     zoomToElement: zoomToElement(contextInstance),
+    setTransformImage: setTransformImage(contextInstance),
   };
 };
 

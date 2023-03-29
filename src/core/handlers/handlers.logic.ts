@@ -1,4 +1,4 @@
-import { ReactZoomPanPinchContext } from "../../models";
+import { FileContentWithKey, ReactZoomPanPinchContext } from "../../models";
 import {
   calculateZoomToNode,
   handleZoomToViewCenter,
@@ -112,4 +112,12 @@ export const zoomToElement =
       const targetState = calculateZoomToNode(contextInstance, target, scale);
       animate(contextInstance, targetState, animationTime, animationType);
     }
+  };
+
+export const setTransformImage =
+  (contextInstance: ReactZoomPanPinchContext) =>
+  (prevImage?: FileContentWithKey, nextImage?: FileContentWithKey): void => {
+    const { setTransformStateImage } = contextInstance;
+
+    setTransformStateImage(prevImage, nextImage);
   };

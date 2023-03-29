@@ -74,6 +74,14 @@ export const handlersTable: ComponentProps = {
     description:
       "This function make a transition for certain node provided to the function(as node element or it's id string). It allows only to zoom elements with offsetWidth and offsetHeight properties - since SVG's doesn't have those, it is impossible to perform it on such elements.",
   },
+  setTransformImage: {
+    type: ["function(prevImage, nextImage)"],
+    parameters: [
+      "prevImage: FileContentWithKey | undefined",
+      "nextImage: FileContentWithKey | undefined",
+    ],
+    description: "Function used to transition images by swiping",
+  },
 };
 
 export const getHandlersTable = (): ControlsFnOptionsType[] => {
