@@ -66,6 +66,8 @@ export type ReactZoomPanPinchProps = {
   initialScale?: number;
   initialPositionX?: number;
   initialPositionY?: number;
+  initialPrevImage?: FileContentWithKey;
+  initialNextImage?: FileContentWithKey;
   disabled?: boolean;
   minPositionX?: null | number;
   maxPositionX?: null | number;
@@ -177,6 +179,8 @@ export type LibrarySetup = Pick<
       | "initialScale"
       | "initialPositionX"
       | "initialPositionY"
+      | "initialPrevImage"
+      | "initialNextImage"
       | "minPositionX"
       | "maxPositionX"
       | "minPositionY"
