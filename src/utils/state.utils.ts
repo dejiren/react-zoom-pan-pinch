@@ -13,8 +13,6 @@ export const createState = (
     scale: props.initialScale ?? initialState.scale,
     positionX: props.initialPositionX ?? initialState.positionX,
     positionY: props.initialPositionY ?? initialState.positionY,
-    prevImage: props.initialPrevImage,
-    nextImage: props.initialNextImage,
   };
 };
 
